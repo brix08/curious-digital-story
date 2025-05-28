@@ -19,58 +19,58 @@ const Index = () => {
       title: "Personal Information", 
       description: "Get to know me better",
       path: "/personal",
-      color: "from-blue-500 to-purple-600"
+      color: "from-gray-600 to-gray-800"
     },
     { 
       icon: Users, 
       title: "Family Background", 
       description: "My roots and family story",
       path: "/family",
-      color: "from-green-500 to-teal-600"
+      color: "from-gray-500 to-gray-700"
     },
     { 
       icon: Briefcase, 
       title: "Work Experience", 
       description: "Professional journey and achievements",
       path: "/experience",
-      color: "from-orange-500 to-red-600"
+      color: "from-gray-700 to-gray-900"
     },
     { 
       icon: Heart, 
       title: "Personal Interests", 
       description: "What drives and inspires me",
       path: "/interests",
-      color: "from-pink-500 to-rose-600"
+      color: "from-gray-600 to-gray-800"
     },
     { 
       icon: Code, 
       title: "Current Projects", 
       description: "What I'm working on now",
       path: "/projects",
-      color: "from-indigo-500 to-blue-600"
+      color: "from-gray-500 to-gray-700"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
       <Navigation />
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-800/20 to-gray-700/20 backdrop-blur-sm"></div>
         
         <div className={`relative z-10 text-center max-w-4xl mx-auto transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
           <div className="mb-8">
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
+            <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-gray-600 to-gray-800 p-1">
               <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
                 <User size={48} className="text-gray-700" />
               </div>
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Welcome to My
-              <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-gray-300 to-gray-500 bg-clip-text text-transparent">
                 Portfolio
               </span>
             </h1>
@@ -80,7 +80,7 @@ const Index = () => {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <Button size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
+            <Button size="lg" className="bg-gradient-to-r from-gray-600 to-gray-800 hover:from-gray-700 hover:to-gray-900 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
               <Github className="mr-2" size={20} />
               GitHub
             </Button>
@@ -100,8 +100,8 @@ const Index = () => {
         </div>
 
         {/* Floating elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-32 h-32 bg-purple-500/20 rounded-full blur-xl animate-pulse delay-1000"></div>
+        <div className="absolute top-20 left-10 w-20 h-20 bg-gray-600/20 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-32 h-32 bg-gray-700/20 rounded-full blur-xl animate-pulse delay-1000"></div>
       </section>
 
       {/* Portfolio Sections */}
@@ -129,7 +129,7 @@ const Index = () => {
                         <div className={`w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r ${section.color} p-4 group-hover:scale-110 transition-transform duration-300`}>
                           <Icon size={32} className="text-white w-full h-full" />
                         </div>
-                        <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-300 transition-colors duration-300">
+                        <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-gray-300 transition-colors duration-300">
                           {section.title}
                         </h3>
                         <p className="text-gray-300 leading-relaxed">
@@ -137,7 +137,7 @@ const Index = () => {
                         </p>
                       </div>
                       <div className="mt-6">
-                        <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 group-hover:border-blue-400 transition-all duration-300">
+                        <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 group-hover:border-gray-400 transition-all duration-300">
                           Explore
                         </Button>
                       </div>
