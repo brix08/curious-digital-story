@@ -22,12 +22,12 @@ interface PersonalInfo {
 const Personal = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [personalInfo, setPersonalInfo] = useState<PersonalInfo>({
-    name: "John Doe",
-    email: "john.doe@example.com",
-    phone: "+1 (555) 123-4567",
-    location: "San Francisco, CA",
-    birthDate: "January 15, 1995",
-    bio: "Passionate full-stack developer with a love for creating innovative solutions. I enjoy tackling complex problems and turning ideas into reality through code. When I'm not programming, you can find me exploring new technologies, reading tech blogs, or contributing to open-source projects.",
+    name: "Brix Pasilan",
+    email: "pasilanbrixjustin08@gmail.com",
+    phone: "+63 9659033687",
+    location: "Kauswagan, CDOC",
+    birthDate: "March 08, 2003",
+    bio: "I love cooking",
     skills: ["JavaScript", "React", "Node.js", "Python", "TypeScript", "AWS"]
   });
   const [editForm, setEditForm] = useState<PersonalInfo>(personalInfo);
@@ -151,7 +151,7 @@ const Personal = () => {
                   </div>
 
                   <div className="p-4 bg-white/5 rounded-lg">
-                    <h3 className="text-white font-semibold mb-3">Biography</h3>
+                    <h3 className="text-white font-semibold mb-3">Bio</h3>
                     <p className="text-gray-300 leading-relaxed">{personalInfo.bio}</p>
                   </div>
 
@@ -222,7 +222,7 @@ const Personal = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="bio" className="text-white">Biography</Label>
+                    <Label htmlFor="bio" className="text-white">Bio</Label>
                     <Textarea
                       id="bio"
                       value={editForm.bio}

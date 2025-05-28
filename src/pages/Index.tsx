@@ -57,7 +57,7 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-800/20 to-gray-700/20 backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 backdrop-blur-sm"></div>
         
         <div className={`relative z-10 text-center max-w-4xl mx-auto transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
@@ -69,7 +69,7 @@ const Index = () => {
               </div>
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              Welcome to My
+              My
               <span className="block bg-gradient-to-r from-gray-300 to-gray-500 bg-clip-text text-transparent">
                 Portfolio
               </span>
@@ -82,11 +82,11 @@ const Index = () => {
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <Button size="lg" className="bg-gradient-to-r from-gray-600 to-gray-800 hover:from-gray-700 hover:to-gray-900 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
               <Github className="mr-2" size={20} />
-              GitHub
+              
             </Button>
             <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
               <Linkedin className="mr-2" size={20} />
-              LinkedIn
+              Facebook
             </Button>
             <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
               <Mail className="mr-2" size={20} />

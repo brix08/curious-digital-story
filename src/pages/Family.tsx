@@ -25,26 +25,26 @@ const Family = () => {
   const [familyMembers, setFamilyMembers] = useState<FamilyMember[]>([
     {
       id: "1",
-      name: "Robert Doe",
+      name: "Joselou Pasilan",
       relationship: "Father",
-      age: "58",
-      occupation: "Engineer",
+      age: "45",
+      occupation: "Sale",
       description: "A dedicated engineer who taught me the value of precision and problem-solving."
     },
     {
       id: "2",
-      name: "Maria Doe",
+      name: "Helen Pasilan",
       relationship: "Mother",
-      age: "55",
-      occupation: "Teacher",
+      age: "44",
+      occupation: "House Wife",
       description: "An inspiring educator who instilled in me a love for learning and helping others."
     },
     {
       id: "3",
-      name: "Sarah Doe",
+      name: "Lyka Pasilan",
       relationship: "Sister",
-      age: "25",
-      occupation: "Designer",
+      age: "15",
+      occupation: "Student",
       description: "My creative sister who always sees the world from a unique perspective."
     }
   ]);
@@ -185,7 +185,7 @@ const Family = () => {
                         <p className="text-gray-300">
                           <span className="text-gray-400">Occupation:</span> {member.occupation}
                         </p>
-                        <p className="text-gray-300 leading-relaxed mt-3">{member.description}</p>
+                        
                       </div>
                     </div>
                   ))}
